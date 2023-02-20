@@ -22,7 +22,7 @@ public class ActivityDao {
 
     public List<Activity> listActivities(){
         EntityManager entityManager = entityManagerFactory.createEntityManager();
-        return entityManager.createQuery("select a from Activity", Activity.class).getResultList();
+        return entityManager.createQuery("select a from Activity a", Activity.class).getResultList();
     }
 
     public Activity findActivityById(long id){

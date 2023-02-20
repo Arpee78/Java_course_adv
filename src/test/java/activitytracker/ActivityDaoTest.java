@@ -53,7 +53,7 @@ class ActivityDaoTest {
         assertEquals(3, activities.size());
         assertThat(activities)
                 .extracting(Activity::getDescription)
-                .contains("morning running", "hiking near Budapest", "evening running");
+                .contains("Futás az erdőben", "Biciklitúra a tó körül", "Túra a hegyekben");
     }
 
     @org.junit.jupiter.api.Test
